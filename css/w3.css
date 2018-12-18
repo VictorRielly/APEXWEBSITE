@@ -97,7 +97,7 @@ button, html [type=button], [type=reset], [type=submit] {
 }
 button::-moz-focus-inner,  [type=button]::-moz-focus-inner,  [type=reset]::-moz-focus-inner,  [type=submit]::-moz-focus-inner {
     border-style: none;
-    padding: 0;
+    padding: 0 8px;
 }
 button:-moz-focusring,  [type=button]:-moz-focusring,  [type=reset]:-moz-focusring,  [type=submit]:-moz-focusring {
     outline: 1px dotted ButtonText;
@@ -512,6 +512,9 @@ a {
     width: 91.66666%}
 .w3-col.l12 {
     width: 99.99999%}
+.w3-col.l13 {
+    width: 50%;  
+}
 }
 .w3-rest {
     overflow: hidden;
@@ -1316,5 +1319,13 @@ a {
 .w3-border-pale-blue, .w3-hover-border-pale-blue:hover {
     border-color: #e7ffff!important;
 }
-.centered {
+@media (min-width:993px) 
+{
+   .centered 
+   {
+      margin: auto;
+      width: 100%;
+      padding-left: 20%;
+      padding-right: 20%;
+   }
 }
